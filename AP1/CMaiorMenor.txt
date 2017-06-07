@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+main( )
+{
+      float n1,n2,media;
+      
+      printf("nota 1: ");
+      scanf("%f", &n1);
+      printf("\nnota 2: ");
+      scanf("%f",&n2);
+      media=(n1+n2*2)/3;
+      printf("\nmedia:%.2f",media);
+      	if((media>=9) && (media<=10))
+          printf("\nVoce esta no conceito A!");
+    	 if ((media>=7.5) && (media<9))
+           printf("\nVoce esta no conceito B!");
+    		 if ((media>=6) && (media<7.5))
+    		 printf("\nVoce esta no conceito C!");
+    		 	if ((media<6))
+    		 	printf("\nVoce esta no conceito D! Cuidado!");
+				if ((media>10))
+				printf("\nSoma incorreta!");
+          
+getche( );
+}
