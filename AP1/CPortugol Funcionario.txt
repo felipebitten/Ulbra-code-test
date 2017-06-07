@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+
+main ()
+{
+	float C1, salario, md;
+	
+	printf ("Digite 1 para Tecnico ou 2 para gerente, outros digite 3: ");
+	scanf ("%f", &C1);
+	printf ("\nDigite seu salario:");
+	scanf ("%f", &salario);
+	if (C1==1)
+	{
+	md= (salario+(salario*0.50));
+	printf ("\nSalario reajustado para:%.2f", md);
+}
+		if (C1==2)
+		{
+		md= (salario+(salario*0.30));
+		printf ("\nSalario reajustado para:%.2f", md);
+			}	
+			if (C1==3)
+			{
+			md= (salario+(salario*0.20));
+			printf ("\nSalario reajustado para:%.2f", md);
+			}	
+	getche();
+}
