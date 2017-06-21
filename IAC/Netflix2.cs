@@ -14,14 +14,17 @@ class NetflixCs
 
     Console.WriteLine("Cadastre-se com seu nome no site: ");
     nome = Console.ReadLine();
+    Console.WriteLine("");
     Console.WriteLine("Escolha sua senha: ");
     senha = int.Parse(Console.ReadLine());
+    Console.WriteLine("");
     Console.WriteLine("Sua data de nascimento: ");
     born = float.Parse(Console.ReadLine());
+    Console.WriteLine("");
 
     Console.WriteLine("Métodos de Pagamento:");
-    Console.WriteLine("1- MasterCard");
-    Console.WriteLine("2- Visa");
+    Console.WriteLine("[1] MasterCard");
+    Console.WriteLine("[2] Visa");
     service = int.Parse(Console.ReadLine());
     int i = 0;
       if (service==1) {

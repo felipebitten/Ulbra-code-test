@@ -1,0 +1,8 @@
+Usuario vai digitar um que quer saber a tabuada
+Ex:5
+Sistema aparece a tabuada
+Ex: 5X0=0
+    5X1=1
+    ==
+    ==
+    5X10=50
