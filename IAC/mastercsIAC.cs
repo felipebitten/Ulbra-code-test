@@ -67,14 +67,14 @@ class mastercsIAC
 
                 case 3:
 
-                            float N1 = 0;
-                            float N2 = 0;
-                            float Result = 0;
+                            int n1 = 0;
+                            int n2 = 0;
+                            float result = 0;
                             string Oper = "";
 
                             Console.Clear();
                             Console.WriteLine("Digite um número:");
-                            N1 = float.Parse(Console.ReadLine());
+                            n1 = int.Parse(Console.ReadLine());
 
                             Console.WriteLine("Selecione a opcão:");
                             Console.WriteLine("[+] Soma:");
@@ -84,29 +84,29 @@ class mastercsIAC
                             Oper = Console.ReadLine();
 
                             Console.WriteLine("Digite mais um número:");
-                            N2 = float.Parse(Console.ReadLine());
+                            n2 = int.Parse(Console.ReadLine());
 
                           if(Oper == "+")
                           {
-                            Result = N1 + N2;
+                            result = n1 + n2;
                           }
                           else if(Oper == "-")
                           {
-                            Result = N1 - N2;
+                            result = n1 - n2;
                           }
                           else if(Oper == "*")
                           {
-                            Result = N1 * N2;
+                            result = n1 * n2;
                           }
                           else if(Oper == "/")
                           {
-                            Result = N1 / N2;
+                            result = n1 / n2;
                           }
                           else
                           {
                             Console.WriteLine("Comando Incorreto!");
                           }
-                            Console.WriteLine("O resultado é: " + N1 + Oper + N2 +" = " + Result);
+                            Console.WriteLine("O resultado é: " + n1 + Oper + n2 +" = " + result);
                             Console.WriteLine("Pressione qualquer tecla para voltar");
                             Console.ReadLine();
                       break;
@@ -120,7 +120,7 @@ class mastercsIAC
 
                       Console.Clear();
                       Console.WriteLine("Informe qual seu sexo");
-                      Console.WriteLine("M para Masculino || F para Feminino:");
+                      Console.WriteLine("M para Masculino ou F para Feminino:");
                       Sexo = Console.ReadLine();
 
                       Console.WriteLine("Qual seu peso em kg? ");
@@ -141,7 +141,7 @@ class mastercsIAC
                           } else if(IMC < 31.1){
                               Console.WriteLine("Você esta acima do peso! Seu IMC é:", IMC);
                           } else{
-                              Console.WriteLine("Você está com obesidade, cuidado! Seu IMC é:", Imc);
+                              Console.WriteLine("Você está com obesidade, cuidado! Seu IMC é:", IMC);
                             }
                       } else if(Sexo == "f" || Sexo == "F")
                         {
