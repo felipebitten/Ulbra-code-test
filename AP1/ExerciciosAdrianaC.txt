@@ -1,0 +1,55 @@
+2.
+#include <stdio.h>
+#include <conio.h>
+
+main ()
+{
+int idade;
+do {
+	printf ("\nDigite sua idade: ");
+	scanf ("%i", &idade);
+	if (idade>100 || idade<0){
+	printf ("\nIdade invalida!");
+}
+}while (idade<0 || idade>100);	
+		if (idade>=18 && idade<=60)
+		printf ("\nVoto obrigatorio!");
+		else
+		printf ("\nVoto nao obrigatorio");
+	getche();
+}
+
+3.
+#include <stdio.h>
+#include <conio.h>
+
+main ()
+{
+int num;
+int gremio=0; 
+int inter=0; 
+int outros=0;
+do {
+	printf ("\n1 - Gremio \n2 - Inter \n3 - Outros \n0 - Encerrar \nDigite o numero referente ao seu time: ");
+	scanf ("%i", &num);
+	if (num==1)
+		{gremio++;
+		}
+	if (num==2)
+		{inter++;
+		}
+	if (num==3)
+		{outros++;
+		}
+	}while (num==1 || num ==2 || num==3);
+		if (num==0 || num>3)
+	printf ("Programa encerrado!");
+	
+	printf ("\nQuantidade de gremistas: %i ", gremio);
+	
+	printf ("\nQuantidade de colorados: %i  ", inter);
+	
+	printf ("\nQuantidade de Outros times: %i ", outros);
+	
+	getche();
+}
